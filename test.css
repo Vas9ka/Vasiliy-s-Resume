@@ -45,7 +45,7 @@ address{
     position: absolute;
     width: 100%;
     top:164px;
-    height:120px;
+    height:121px;
     left: 0px;
     color: #FFFFFF;
     font-family: 'Roboto Slab', serif;
@@ -60,7 +60,9 @@ main{
     left: 0px;
 }
 
-
+dt{
+    margin-left: 5px;
+}
 .article2{
     font-family: 'Playfair Display SC', serif;
     font-size: 24px;
@@ -72,12 +74,48 @@ main{
     background: #4b6154;
     color: #FFFFFF;
     font-style: italic;
+    text-align: center;
 }
+
 dt{
     font-weight: bold;
 }
 a{
     color: #4b6154;
+}
+.interests{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.interests li {
+    border-style: solid;
+    border-color: #4b6154;
+    border-radius: 5px;
+    background-color:#94d6ba ;
+    padding: 10px;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+
+}
+.skills dt{
+    position: relative;
+    align-self: auto;
+    border-style: solid;
+    border-color: #4b6154;
+    border-radius: 5px;
+    background-color:#94d6ba ;
+    padding: 3px;
+}
+.skills dd{
+    position: relative;
+    border-color: #4b6154;
+    border-radius: 5px;
+    margin-left: 1px;
+    border-left: 0;
+    font-style: italic;
 }
 aside{
     position: absolute;
@@ -85,8 +123,43 @@ aside{
     right:  -945px;
     
 }
+.info{
+    display: flex;
+    justify-content: space-evenly ;
+    list-style-type: none;
+}
+.info li {
+    margin-top: 20px;
+    border-style: solid;
+    border-color: #4b6154;
+    border-radius: 25px;
+    background-color:#4b6154 ;
+    padding: 10px;
+    color: white;
+    font-weight: 100;
+}
 ul{
     font-weight: bold;
     color: #000000 ;
+    
 }
 html,body{overflow-x: hidden;}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+time{
+    text-align: center;
+}
+.education{
+    position: relative;
+    top: 10px;
+    border-style: solid;
+    border-color: #4b6154;
+    border-radius: 230px;
+    background-color:#64ac8f ;
+    padding: -100px;
+
+}
