@@ -1,19 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display:400,700,400italic,700italic&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|PT+Sans+Caption&subset=latin,cyrillic);
+
 header{
 position: absolute;
-height: 165px;
+height: 167px;
 left: 0px;
 top: -1.5px;
-
-background: #FFFFFF;
+width: 100%;
+background: #64ac8f;
 }
 
 body {
-    font-family: 'Lato';
-    color: #434343;
-    background: #FFFFFF;
+    
     font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     max-width: 100%;
   }
 .image1{
@@ -28,6 +28,7 @@ background: url(image.png);
 .text1{
     position: relative;
     top:10px;
+    font-family: 'Playfair Display', serif;
 }
 div{
     position: absolute;
@@ -40,7 +41,7 @@ p{
 
 }
 address{
-    background: #2cbfaa;
+    background:#94d6ba;
     position: absolute;
     width: 100%;
     top:164px;
@@ -50,25 +51,31 @@ address{
 }
 main{
     position: absolute;
-    max-width: 100%;
-    top:265px;
+    font-family: 'Roboto Slab', serif;
+    top:264px;
+    background: #c0dfc2;
+    width: 100%;
+    left: 0px;
 }
 
 
 .article2{
+    font-family: 'Playfair Display SC', serif;
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     left: 0px;
     top:0px;
     position: relative;
-    background: #2cbfaa;
+    background: #4b6154;
+    color: #FFFFFF;
+    font-style: italic;
 }
 dt{
     font-weight: bold;
 }
 a{
-    color: #2cbfaa;
+    color: #4b6154;
 }
 aside{
     position: absolute;
@@ -78,4 +85,6 @@ aside{
 }
 ul{
     font-weight: bold;
+    color: #000000 ;
 }
+html,body{overflow-x: hidden;}
