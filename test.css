@@ -4,7 +4,7 @@
 
 header{
 position: absolute;
-height: 167px;
+height: 200px;
 left: 0px;
 top: -1.5px;
 width: 100%;
@@ -18,12 +18,9 @@ body {
   }
 .image1{
     position: absolute;
-width: 173px;
-height: 164px;
 left: 0px;
 top: 0px;
 
-background: url(image.png);
 }
 .text1{
     position: relative;
@@ -31,18 +28,15 @@ background: url(image.png);
     font-family: 'Roboto Slab', serif;
 }
 div{
-    position: absolute;
+    position: relative;
     left: 175px;
-    top:0px;
     font-size: 20px;
 }
 
 address{
     background:#94d6ba;
-    position: absolute;
+    position: relative;
     width: 100%;
-    top:164px;
-    height:121px;
     left: 0px;
     color: #FFFFFF;
     font-family: 'Roboto Slab', serif;
@@ -51,7 +45,7 @@ address{
 main{
     position: absolute;
     font-family: 'Roboto Slab', serif;
-    top:264px;
+    top:190px;
     background: #c0dfc2;
     left: 0px;
 }
@@ -90,11 +84,24 @@ a{
     border-radius: 5px;
     background-color:#94d6ba ;
     padding: 10px;
+    margin: 5px;
+    display: inline-block;
 }
 .skills{
     display: flex;
     justify-content: center;
-
+    
+}
+.info{
+    display: flex;
+    justify-content: space-evenly ;
+    list-style-type: none;
+}
+@media screen and (max-width: 1000px) {
+    .skills, .interests, .info{
+      display: inline-block;
+      width: 100%;
+    }
 }
 .skills dt{
     position: relative;
@@ -119,11 +126,7 @@ aside{
     right:  -945px;
     
 }
-.info{
-    display: flex;
-    justify-content: space-evenly ;
-    list-style-type: none;
-}
+
 .info li {
     margin-top: 20px;
     border-style: solid;
@@ -151,7 +154,6 @@ time{
 }
 .education{
     position: relative;
-    top: 10px;
     border-style: solid;
     border-color: #4b6154;
     border-radius: 230px;
@@ -178,4 +180,38 @@ top: 2px;
 float: left;
 margin-right: 10px;
 background: url(xam.png);
+}
+.article2.ed{
+    top: -23px;
+}
+.conts {
+    /*position: absolute;*/
+    position: absolute;
+margin-left: auto;
+margin-right: auto;
+top: 250px;
+left: 0;
+right: 0;
+text-align: center;
+    visibility: hidden;
+    box-shadow: 0 0 30px 150px rgba(0, 0, 0, .8);
+    font-size: 18pt;
+    color: white;
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    border-radius: 5px;
+    z-index: 9999;
+}
+.contacts {
+    list-style-type: none;
+    margin-left: 0;
+    margin-right: 15px;
+}
+button{
+    position: relative;
+    background-color: #64ac8f ;
+}
+.con {
+    margin-top: 5px;
+    text-align: center;
 }

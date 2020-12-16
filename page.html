@@ -8,14 +8,17 @@
 </head>
     <body>
         <header>
-            <div class="image1"></div>
+            <img class="image1" id="photo" onclick="NextImage()" src="image.png" width="173" height="164" ></div>
             <div class="text1"><b>Vasiliy Yugay </b><br>
             <small>Third-year student in ITMO University, Saint-Petersburg. Very interested in Data Science and Algorithms.</small>
-            </div>
             
+            </div>
+           
         </header>
+        
         <main><br>
-            <div class="article2 article1">Education</div>
+            <div class="article2 ed">Education</div>
+            
             <section class ="education">
                 <h3>ITMO University</h3>
                 <h4>Internet Technologies and Programming</h4>
@@ -63,30 +66,37 @@
                 <h1> Xamarin map</h1>
                 <p>Xamarin map - is application for Android written on Xamarin (C#).This application is using Google API Maps. Except showing you your location, Xamarin Map can show distance beetwen your location and selected point. If distance is less than 1 km, a new letter is formed where your location and location of selected point are written.
                     <a href=https://github.com/Vas9ka/XamarinMap>Github</a>
+
                 </p>
             </section>
-               
-            </section> 
+            <button id = "but" onclick="showContacts()">Contacts</button>
+              
             </main>
-        <footer>
-            <address> <ul class="info">
-               <li> vasyayugay99@gmail.com </li>
-               <li> Вяземский переулок,5-7, Санкт-Петербург, Россия </li>
-               <li>+79219938534</li>
-               <li>github.com/Vas9ka</li>
+            <div class='conts' id ='conts'>
+                <h2 style="margin-left: 125px;">Contacts</h2>
+                <ul class="info" id = 'info'>
+                <li id = 'li'> vasyayugay99@gmail.com </li>
+                <li id = 'li'> Вяземский переулок,5-7, Санкт-Петербург, Россия </li>
+                <li id = 'li'>+79219938534</li>
+                <li id = 'li'>github.com/Vas9ka</li>
 
-            </ul> <br>
-        </address>
+             </ul> <br>
+            </div>
+        <footer>
         </footer>
         <script>
+            
             var all = document.body.getElementsByTagName("*")
-            dict = {}
+            dict = []
             for (var i=0, max=all.length; i < max; i++) {
                 if (!(all[i].tagName in dict)){
                   dict[all[i].tagName] = document.body.getElementsByTagName(all[i].tagName).length
             }
         }
-        console.log(dict)
+        
+        console.table(dict)
             </script>
+            
+    <script src="index.js"></script>
     </body>
 </html>
