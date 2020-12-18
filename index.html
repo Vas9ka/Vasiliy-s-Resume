@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<head>
+<meta charset="utf-8">
+<link href="test.css" rel="stylesheet">
+<title>Югай Василий М33091</title>
+<meta name="keywords" content="портфолио,о себе,визитка">
+<meta name="description" content="Веб-страница, посвященная такому прекрасному человеку, как я">
+</head>
+    <body>
+        <header>
+            <img class="image1" id="photo" onclick="NextImage()" src="image.png" width="173" height="164" ></div>
+            <div class="text1"><b>Vasiliy Yugay </b><br>
+            <small>Third-year student in ITMO University, Saint-Petersburg. Very interested in Data Science and Algorithms.</small>
+            
+            </div>
+           
+        </header>
+        
+        <main><br>
+            <div class="article2 ed">Education</div>
+            
+            <section class ="education">
+                <h3>ITMO University</h3>
+                <h4>Internet Technologies and Programming</h4>
+                <time datetime="2018-09">
+                   <h4>09.2018-Present</h4> 
+                </time>
+            </section>
+            <section>
+                <br>
+                <div class="article2">Skills</div>
+                <dl class = "skills">
+                    <dt>Project Managment</dt>
+                    <dd>I can easily create plan and divide project into parts.</dd>
+                    <dt>Communication</dt>
+                    <dd>I can see eye to eye with everyone very quickly. </dd>
+                    <dt>Programming</dt>
+                    <dd>I am good at solving algorithmic tasks and not scared new technologies</dd>
+                    </dl>
+            </section>
+            <section><div class="article2">Certificates</div></section>
+                <ul class="interests">
+                    <li><a href=https://coursera.org/share/f51628ae9e14df3a9954bfe04c30c2c9>Maths and Python for Data Analysis</a>
+                    <time datetime="2019-07"><br>07/2019 - 08/2019 </time></li>
+                    <li><a href=https://coursera.org/share/b1ef9052c240d6f32c9f23764b285e93>Labeled Training</a>
+                    <time datetime="2020-04"><br>04/2020 - 05/2020</time></li>
+                  </ul>
+            <section><div class="article2">Interests</div>
+                    <ul class ="interests">
+                    
+
+                        <li>Mathematical statistics</li>
+                        <li>Data Science</li>
+                        <li>Machine Learning</li>
+                        <li>Algorithms and Data structures</li>
+                   
+                </ul>
+            <section><div class ='article2'>Projects </div>
+                <div class="imagetel"></div>
+                <h1>Telegram currency bot</h1>
+                <p> I've created the Telegram bot which can show you USD, EUR, CNY, GBP, JPY currencies' exchange rate to RUB. This bot shows info about currencies in five banks in selected city. Also this bot can show currency exchange rate in Central Bank at certain date.
+                <a href=https://github.com/Vas9ka/TelegramCurrencyBot>Github</a>
+
+                </p>
+                <div class='imagexam'></div>
+                <h1> Xamarin map</h1>
+                <p>Xamarin map - is application for Android written on Xamarin (C#).This application is using Google API Maps. Except showing you your location, Xamarin Map can show distance beetwen your location and selected point. If distance is less than 1 km, a new letter is formed where your location and location of selected point are written.
+                    <a href=https://github.com/Vas9ka/XamarinMap>Github</a>
+
+                </p>
+            </section>
+            <button id = "but" onclick="showContacts()">Contacts</button>
+              
+            </main>
+            <div class='conts' id ='conts'>
+                <h2 style="margin-left: 125px;">Contacts</h2>
+                <ul class="info" id = 'info'>
+                <li id = 'li'> vasyayugay99@gmail.com </li>
+                <li id = 'li'> Вяземский переулок,5-7, Санкт-Петербург, Россия </li>
+                <li id = 'li'>+79219938534</li>
+                <li id = 'li'>github.com/Vas9ka</li>
+
+             </ul> <br>
+            </div>
+        <footer>
+        </footer>
+        <script>
+            
+            var all = document.body.getElementsByTagName("*")
+            dict = []
+            for (var i=0, max=all.length; i < max; i++) {
+                if (!(all[i].tagName in dict)){
+                  dict[all[i].tagName] = document.body.getElementsByTagName(all[i].tagName).length
+            }
+        }
+        
+        console.table(dict)
+            </script>
+            
+    <script src="index.js"></script>
+    </body>
+</html>
