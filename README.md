@@ -4,6 +4,7 @@ This website created by using HTML, CSS and Javascript.
 File Vasiliy's Resume.pdf is layout of final version of my website.
 
 Добавлена 6 лаба
+
 Требования:
 1. Создать Всплывающий блок с контактной информацией на вашей странице
 2. Добавить галерею фото
